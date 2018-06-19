@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Material Design Bootstrap</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/fontawesome/css/fontawesome-all.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -28,6 +28,13 @@
             <p class="animated fadeIn text-muted">MDB Team</p>
             <button class="animated fadeIn btn btn-rounded purple-gradient">susmote</button>
             <button class="animated fadeIn btn btn-rounded blue-gradient">susmote</button>
+            <button class="animated fadeIn btn btn-rounded aqua-gradient"><i class="fa fa-2x fa-arrow-circle-right"></i></button>
+            <a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
+            <i class="fa fa-arrow-circle-right"></i>
+            <button id="sure-btn" class="animated btn btn-rounded peach-gradient"><i class="fa fa-500px fa-2x"></i></button>
+            <div class="progress w-75 mt-5" style="height: 20px;">
+                <div id="come-in-pg" class="progress-bar progress-bar-striped progress-bar-animated bg-success h" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
         </div>
     </div>
     <!-- /Start your project here-->
@@ -41,6 +48,14 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#sure-btn").click(function(){
+                $("#come-in-pg").css("width", "100%");
+                console.log();
+            });
+        });
+    </script>
 </body>
 
 </html>
