@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font/fontawesome/css/fontawesome-all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
+
+            <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+
+            <p class="animated fadeIn text-muted">MDB Team</p>
+            <button class="animated fadeIn btn btn-rounded blue-gradient">susmote</button>
+            <button class="animated fadeIn btn btn-rounded aqua-gradient"><i class="fa fa-2x fa-arrow-circle-right"></i></button>
+            <i class="fa fa-arrow-circle-right"></i>
+            <button class="animated fadeIn btn btn-rounded purple-gradient">hello</button>
+            <button id="sure-btn" class="animated btn btn-rounded peach-gradient" onclick="fakeProgress(0, comein)"><i class="fa fa-500px fa-2x"></i></button>
+            <div class="progress w-75 mt-5" id="comein" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success h" role="progressbar" style="width: 0%; height: 20px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript">
+        function setLOAD(v, el) {
+            var read = (document.all && document.getElementsByTagName);
+            if (read || document.readyState == "complete")
+                console.log(v);
+                valueEl = el.children[0];
+            {
+                filterEl = el.children[0];
+                valueEl.innerText = v + "%";
+                filterEl.style.width = v + "%";
+    
+            }
+        }
+        function fakeProgress(v, el) {
+            if (v > 100)
+                location.href = "https://www.susmote.com";
+            else {
+                setLOAD(v, el);
+                window.setTimeout("fakeProgress(" + (v+25) + ", document.all['" + el.id + "'])", 2000);
+            }
+        }
+    </script>
+</body>
+
+</html>
