@@ -13,6 +13,8 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- html5 dplayer -->
+  <link href="css/DPlayer.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
   <style type="text/css">
@@ -125,16 +127,16 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>在TexAI获取免费的图像识别API</strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong>目前市场识别率最高,费用最低的图像识别API</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>现在加入TexAI,就可以免费体验最新的图像识别API,创建专属于你自己的API管理控制台,并且享有专业的文档资源阅读权限,同事也能享受专业人员的指导
+</strong>
               </p>
 
               <a target="_blank" href="#" class="btn btn-outline-white btn-lg">立即查看
@@ -363,12 +365,8 @@
           <!--Grid column-->
           <div class="col-lg-6 col-md-12">
 
-            <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <video class="video-intro" autoplay loop>
-                <source src="video/I_Am_AI.mp4" type="video/mp4" />
-            </video>
-            </div>
+            <p class="h5 text-center mb-4">观看最新宣传片 "I Am Ai"</p>
+              <div id="dplayer"></div>
           </div>
           <!--/Grid column-->
 
@@ -752,10 +750,44 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Dplayer core JavaScript -->
+  <script type="text/javascript" src="js/DPlayer.min.js"></script>
   <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+    const dp = new DPlayer({
+    container: document.getElementById('dplayer'),
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: true,
+    lang: 'zh-cn',
+    screenshot: true,
+    hotkey: true,
+    preload: 'auto',
+    logo: '',
+    volume: 0.7,
+    mutex: true,
+    video: {
+        url: 'video/city.mp4',
+        pic: '',
+        thumbnails: '',
+        type: 'auto'
+    },
+    subtitle: {
+        url: '',
+        type: '',
+        fontSize: '25px',
+        bottom: '10%',
+        color: '#b7daff'
+    },
+    contextmenu: [
+        {
+            text: 'susmote.com版权所有',
+            link: 'https://www.susmote.com'
+        }
+    ]
+});
   </script>
 </body>
 
