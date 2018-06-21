@@ -13,18 +13,24 @@ body,
     .carousel .carousel-inner .active {
       height: 100%; }
 
-/* Navbar animation */
+/* 导航栏动画 */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* texai logo */
+.navbar .navbar-brand img {
+    height: 35px;
+}
 
 .top-nav-collapse {
   background-color: #1C2331; }
 
-/* Adding color to the Navbar on mobile */
+/* 手机导航栏颜色 */
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: #1C2331; } }
 
-/* Footer color for sake of consistency with Navbar */
+/* Footer 背景颜色 */
 .page-footer {
   background-color: #1C2331; }
