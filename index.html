@@ -6,6 +6,7 @@
   <meta name="keywords" content="人工智能,TexAI开放平台,AI,AI软件,语音,speech,语音技术,图像,图像技术,NLP,自然语言,视频分析,视频技术,知识图谱,增强现实,大数据,数据智能,深度学习,机器学习,场景应用,解决方案,baiduai,ai.susmote.com,texai,texcar,texrengongzhineng,texrengongzhinengkaifangpingtai,texdanao,智能,人工神经网络,人工智能的未来,人工智能产品,什么是人工智能"/>
   <meta name="description" content="TexAI为你提供世界领先的语音、图像、NLP等多项人工智能技术，开放对话式人工智能系统、智能驾驶系统两大行业生态，共享AI领域最新的应用场景和解决方案，帮您提升竞争力，开创未来"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="img/TexAIico@1x.png" />
   <title>TexAI_世界领先的人工智能服务平台</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="font/fontawesome/css/fontawesome-all.min.css">
@@ -117,7 +118,7 @@
         <div class="view">
 
           <!--视频源-->
-          <video class="video-intro" autoplay loop>
+          <video id="ca-video-f" class="video-intro" autoplay loop muted>
             <source src="video/city.mp4" type="video/mp4" />
           </video>
 
@@ -157,7 +158,7 @@
         <div class="view">
 
           <!--视频源-->
-          <video class="video-intro" autoplay loop>
+          <video id="ca-video-s" class="video-intro" autoplay loop muted>
               <source src="video/forest.mp4" type="video/mp4" />
           </video>
 
@@ -197,7 +198,7 @@
         <div class="view">
 
           <!--视频源-->
-          <video class="video-intro" autoplay loop>
+          <video id="ca-video-t" class="video-intro" autoplay loop muted>
               <source src="video/Tropical.mp4" type="video/mp4" />
           </video>
 
@@ -754,8 +755,9 @@
   <script type="text/javascript" src="js/DPlayer.min.js"></script>
   <!-- Initializations -->
   <script type="text/javascript">
-    // Animations initialization
+    // 动画效果初始化
     new WOW().init();
+    // 申明一个播放器
     const dp = new DPlayer({
     container: document.getElementById('dplayer'),
     autoplay: false,
@@ -769,7 +771,7 @@
     volume: 0.7,
     mutex: true,
     video: {
-        url: 'I_Am_AI.mp4',
+        url: 'video/I_Am_AI.mp4',
         pic: '',
         thumbnails: '',
         type: 'auto'
