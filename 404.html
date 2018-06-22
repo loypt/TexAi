@@ -1,26 +1,84 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>404</title>
-<style>
-	body{
-		background-color:#444;
-		font-size:14px;
-	}
-	h3{
-		font-size:60px;
-		color:#eee;
-		text-align:center;
-		padding-top:30px;
-		font-weight:normal;
-	}
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font/fontawesome/css/fontawesome-all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>404</title>
+    <style>
+        h3{
+            font-size:60px;
+            color:#eee;
+            text-align:center;
+            padding-top:30px;
+            font-weight:normal;
+        }
+    </style>
 </head>
+<!--
+  ______         ______          ____  __
+ /_  __/__  _  _/_  __/__  _____/ __ )/ /___  ____ _
+  / / / _ \| |/_// / / _ \/ ___/ __  / / __ \/ __ `/
+ / / /  __/>  < / / /  __/ /__/ /_/ / / /_/ / /_/ /
+/_/  \___/_/|_|/_/  \___/\___/_____/_/\____/\__, /
+                                           /____/
 
+             susmote.com  版权所有
+             Author : susmote
+             代码开源地址:https://github.com/susmote/TexAi  -->
 <body>
-<h3>404，您请求的文件不存在!</h3>
-</body>
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-4 font-weight-bold">404</h1>
+
+            <h5 class="animated fadeIn mb-3">很抱歉，你访问的页面不曾存在过</h5>
+            <button id="sure-btn" class="animated btn btn-rounded blue-gradient" onclick="fakeProgress(0, comein)">回到主页</button>
+            <div class="progress w-75 mt-5" id="comein" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success h" role="progressbar" style="width: 0%; height: 20px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript">
+        function setLOAD(v, el) {
+            var read = (document.all && document.getElementsByTagName);
+            if (read || document.readyState == "complete")
+                console.log(v);
+            valueEl = el.children[0];
+            {
+                filterEl = el.children[0];
+                valueEl.innerText = "正在拼命加载中";
+                filterEl.style.width = v + "%";
+
+            }
+        }
+        function fakeProgress(v, el) {
+            if (v > 100)
+                location.href = "http://ai.susmote.com";
+            else {
+                setLOAD(v, el);
+                window.setTimeout("fakeProgress(" + (v+50) + ", document.all['" + el.id + "'])", 2000);
+            }
+        }
+    </script>
+    </body>
 </html>
