@@ -39,3 +39,26 @@ body,
 /* Footer 背景颜色 */
 .page-footer {
   background-color: #1C2331; }
+
+/*导航栏背景色*/
+.bg-bdark{
+    background: rgb(28, 35, 49) !important;;
+}
+
+/*蓝色背景色*/
+.bg-blue{
+    background-color: #257eeb;
+}
+
+/*布局*/
+.mt-6{
+    margin-top: 4.5rem !important;
+}
+
+/*链接样式*/
+.link-blue{
+    color: #000;
+}
+.link-blue:hover{
+    color: #001ae0;
+}
