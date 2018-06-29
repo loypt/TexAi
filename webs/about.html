@@ -229,6 +229,152 @@
                 </div>
 
             </section>
+            <hr class="my-4">
+            <section class="text-center">
+                <div class="row mt-4">
+                    <div class="col">
+                        <h2>最新调用数据</h2>
+                    </div>
+                </div>
+                <div class="row mt-1 wow fadeIn">
+                    <div class="col-md-6">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                    <div class="col-md-6">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-4">
+            <section class="text-center">
+                <div class="row mt-4">
+                    <div class="col">
+                        <h2>网站框架介绍</h2>
+                    </div>
+                </div>
+                <div class="container" style="margin-top: 50px;">
+                    <div class="row">
+                        <div class="col-md-7 order-md-2 wow slideInRight">
+                            <h2 class="featurette-heading">Bootstrap <span class="text-muted">（Web框架）</span></h2>
+                            <p>Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+                        </div>
+                        <div class="col-md-5 order-md-1 wow slideInLeft">
+                            <img class="featurette-image img-fluid mx-auto" src="../img/about_tech01.jpg" alt="bootstrap">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-7 wow slideInLeft">
+                            <h2 class="featurette-heading">Foot-Awesome <span class="text-muted">（图标字体库）</span></h2>
+                            <p>Font Awesome为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。仅一个Font Awesome字库，就包含了与网页相关的所有形象图标。Font Awesome完全不依赖JavaScript，因此无需担心兼容性。无论在任何尺寸下，可缩放的矢量图形都会为您呈现出完美的图标。只要CSS支持，无论颜色、大小、阴影或者其它任何效果，都可以轻易展现。尽管是为Bootstrap设计，但Font Awesome同样能与其它框架完美协同运作。</p>
+                        </div>
+                        <div class="col-md-5 wow slideInRight">
+                            <img class="featurette-image img-fluid mx-auto" src="../img/about_tech02.png" alt="font-awesome">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-7 order-md-2 wow slideInRight">
+                            <h2 class="featurette-heading">jQuery<span class="text-muted">（JavaScript框架）</span></h2>
+                            <p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。jQuery的核心特性可以总结为：具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。 </p>
+                        </div>
+                        <div class="col-md-5 order-md-1 wow slideInLeft">
+                            <img class="featurette-image img-fluid mx-auto" src="../img/about_tech03.jpg" alt="jQuery">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-4">
+            <section class="text-center">
+                <div class="row mt-4">
+                    <div class="col">
+                        <h2>联系我们</h2>
+                        <p>你有什么问题，都可以通过下面的表单发邮箱给我们，我们会在收到后第一时间解决你的问题的</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-xl-9">
+                        <form id="contact-form" name="contact-form" action="" method="POST">
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">你的姓名</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">你的邮箱</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">主题</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">正文</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="checkbox100" checked="checked">
+                                            <label class="form-check-label" for="checkbox100">是否订阅资讯</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <div class="center-on-small-only">
+                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">发送</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <div class="col-md-4 col-xl-3">
+                        <ul class="list-unstyled contact-icons">
+                            <li class="list-unstyled"><i class="fa fa-map-marker fa-2x"></i>
+                                <p>中国,武汉，江夏区</p>
+                            </li>
+
+                            <li><i class="fa fa-phone fa-2x"></i>
+                                <p>+86 13487549879</p>
+                            </li>
+
+                            <li><i class="fa fa-envelope fa-2x"></i>
+                                <p>texai@texos.cn</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+
+            </section>
+        </div>
     </main>
 
     <!--Footer-->
@@ -304,6 +450,77 @@
     <script type="text/javascript">
         // 动画效果初始化
         new WOW().init();
+        //柱形图
+        var ctxB = document.getElementById("barChart").getContext('2d');
+        var myBarChart = new Chart(ctxB, {
+            type: 'bar',
+            data: {
+                labels: ["人脸识别", "图像识别", "内容审核", "文字识别", "语音合成", "机器翻译"],
+                datasets: [{
+                    label: '调用率（每天）',
+                    data: [125620, 154813, 115813, 98520, 149520, 175121],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        //曲线图
+        var ctxL = document.getElementById("lineChart").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+            type: 'line',
+            data: {
+                labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月"],
+                datasets: [
+                    {
+                        label: "2018年",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [14621548, 15562587, 14259874, 18254898, 14569515, 16598754, 17549821]
+                    },
+                    {
+                        label: "2017年",
+                        fillColor: "rgba(151,187,205,0.2)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [9255695, 10254895, 10859623, 10995666, 11256284, 12548526, 12956254]
+                    }
+                ]
+            },
+            options: {
+                responsive: true
+            }
+        });
     </script>
 </body>
 </html>

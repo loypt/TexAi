@@ -263,13 +263,13 @@
                         <div class="card-header font-weight-bold">
                             <span>关于作者</span>
                             <span class="pull-right">
-                                    <a href="javasctipt:" onclick="alert('微博正在注册中')">
+                                    <a href="javasctipt:" data-toggle="tooltip" data-placement="top" data-html="true" title="<em>正在努力注册中...</em>">
                                         <i class="fa fa-weibo mr-2"></i>
                                     </a>
-                                    <a href="javasctipt:" onclick="alert('QQ怎么可能告诉你')">
+                                    <a href="javasctipt:" data-toggle="tooltip" data-placement="top" data-html="true" title="<em>QQ怎么可能告诉你(✿◡‿◡)</em>">
                                         <i class="fa fa-qq mr-2"></i>
                                     </a>
-                                    <a href="javasctipt:" onclick="alert('这东西我不用')">
+                                    <a href="javasctipt:" data-toggle="tooltip" data-placement="top" data-html="true" title="<em>这东西真的玩不了╮(╯▽╰)╭</em>">
                                         <i class="fa fa-instagram mr-2"></i>
                                     </a>
                                 </span>
@@ -577,6 +577,10 @@
 <script type="text/javascript">
     // 动画效果初始化
     new WOW().init();
+    // Tooltips 初始化
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 </script>
 </body>
 </html>
